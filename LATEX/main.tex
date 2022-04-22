@@ -1,0 +1,112 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{algpseudocode}
+\usepackage{enumerate}
+\usepackage{algpseudocode}
+%----------------------------
+
+\usepackage{tasks}
+%\settasks{counter-format =tsk[a].), label-format=\bfseries, label-offset=1em, label-align=right, label-width
+%=\labelwd, before-skip =\smallskipamount, after-item-skip=0pt}
+
+%----------------------------
+\usepackage{mathtools}          %loads amsmath as well
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{kantlipsum}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{kantlipsum}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage[symbol]{footmisc}
+\usepackage[hmargin=2cm,top=4cm,headheight=65pt,footskip=45pt]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage{lastpage}
+\usepackage{lipsum}
+\usepackage{fancyvrb}
+\usepackage{color}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage[tracking=true]{microtype}
+\renewcommand*{\thefootnote}{\fnsymbol{footnote}}
+\usepackage{comment}
+\usepackage[spanish]{babel}
+\usepackage{subcaption}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{etoolbox}
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+
+\usepackage{verbatim}
+
+
+\newcommand\ddfrac[2]{{\displaystyle\frac{\displaystyle #1}{\displaystyle #2}}}
+\newcommand\numer{\sigma_{\mathit{tot}}}
+\newcommand\denom{\omega\epsilon_0}
+\newcommand{\Mod}[1]{\ (\mathrm{mod}\ #1)}
+\renewcommand{\qed}{\hfill\blacksquare}
+
+%---------------------
+\renewcommand\labelenumii{\theenumi.\arabic{enumii}.}
+\renewcommand\labelenumiii{\theenumi.\alph{enumiii}.}
+%---------------------
+
+\newcommand*\rfrac[2]{{}^{#1}\!/_{#2}}
+\newcommand*\overl[2]{\begin{matrix} #1 \\ #2 \end{matrix}}
+%\providecommand{\abs}[1]{\lvert#1\rvert}
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}
+\DeclarePairedDelimiter\norm{\lVert}{\rVert}
+
+\usepackage{enumitem}
+
+\begin{document}
+
+\begin{titlepage}
+\centering
+{\scshape Titulo de lo que vaya a hacer \par}
+{\scshape\huge Nombre de la materia \par}
+\vspace{1.5cm}
+{\bfseries\Large Nombres: \par}
+\vspace{0.5cm}
+{\Large  Nombres o nombre\par}
+
+\vfill
+{\bfseries\Large Fecha:}
+{\Large 4 de febrero de 2022 \par}
+\vfill
+{\bfseries\Large Profesor:}
+{\Large Nombre del profesor \par}
+\vspace{3cm}
+{\bfseries\LARGE Universidad EAFIT \par}
+\vspace{0.5cm}
+{\scshape\Large Departamento de Ciencias Matemáticas \par}
+\vspace{0.5cm}
+{\Large Medellín \par}
+\vspace{0.5cm}
+{\Large 2022 \par}
+\end{titlepage}
+
+\fancyhead[R]{\includegraphics[width=.18\textwidth]{Logo EAFIT.png}}
+\fancyhead[L]{\bfseries{Departamento de Ciencias Matemáticas\\Nombre de la materia codigo de la materia – Grupo\\Titulo de lo que este haciendo}} 
+\fancyfoot{}
+\fancyfoot[R]{\thepage} 
+
+\newenvironment{packed_enum}{%
+  \renewcommand{\labelenumi}{\textbf{\arabic{enumi}}.}%
+  \renewcommand{\labelenumii}{\alph{enumii}.}%
+  \renewcommand{\labelenumiii}{\roman{enumiii}.}%
+  \begin{enumerate}[itemsep=1pt,parsep=0pt,leftmargin=*]%
+  }{\end{enumerate}}
+
+\section{Introducción}
+
+\end{document}
